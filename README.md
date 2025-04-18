@@ -1,54 +1,69 @@
-# React + TypeScript + Vite
+# 🧠 Jogo de Adivinhação de Palavras - Desenvolvedor Front-end e Back-end
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma aplicação interativa construída com **React** onde o jogador tenta adivinhar palavras relacionadas ao mundo da **programação**, como linguagens, frameworks e ferramentas, com base em dicas. O jogo exibe feedbacks visuais e mensagens usando **React Toastify**.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [React Toastify](https://fkhadra.github.io/react-toastify/)
+- [CSS Modules](https://github.com/css-modules/css-modules)
 
-## Expanding the ESLint configuration
+## 🧩 Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Geração aleatória de palavras com dicas.
+- Validação de letras digitadas.
+- Marcação de letras já utilizadas.
+- Controle de tentativas (limite baseado no tamanho da palavra + tentativas extras).
+- Reinício do jogo com confirmação via toast.
+- Feedback visual para acertos e erros.
+- Interface responsiva e amigável.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📂 Estrutura de Pastas
+
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+src/ 
+├── components/ # Componentes reutilizáveis (Header, Letter, Tip, etc.) 
+├── utils/ # Palavras e tipo Challenge 
+├── App.tsx # Componente principal do jogo 
+├── app.module.css # Estilos principais via CSS Modules
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
 ```
+
+## 📦 Instalação e Execução
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/seu-usuario/nome-do-repo.git
+cd nome-do-repo
+
+Instale as dependências:
+
+npm install
+# ou
+yarn 
+
+Inicie o servidor de desenvolvimento:
+
+npm run dev
+# ou
+yarn dev
+```
+
+## 🔧 Customização
+
+```bash
+src/utils/words.ts
+
+Exemplo:
+
+export const WORDS: Challenge[] = [
+  { id: 1, word: "REACT", tip: "Biblioteca para criar interfaces Web" },
+  { id: 2, word: "NODE", tip: "Ambiente de execução JavaScript no servidor" },
+];
+
+```
+
+## Feito com 💻 + ☕

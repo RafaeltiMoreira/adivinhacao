@@ -19,7 +19,7 @@ export function Header({ current, max, onRestart }: Props) {
         </span>
 
         <button type="button" onClick={onRestart}>
-          <img src={restart} alt="Ícone de reiniciar o jogo." />
+          <img title="Reiniciar o jogo" src={restart} alt="Ícone de reiniciar o jogo." />
         </button>
       </header>
     </div>
