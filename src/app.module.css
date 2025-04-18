@@ -29,3 +29,24 @@
   gap: 0.75rem;
   margin-top: 0.75rem;
 }
+
+/* .toastConfirm {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.toastButton {
+  padding: 0.4rem 1rem;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.toastButton:hover {
+  background-color: #dcdcdc;
+} */
