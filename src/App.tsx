@@ -54,7 +54,11 @@ export default function App() {
 
     if (exists) {
       setLetter("");
-      return toast.info("Você já utilizou a letra " + value);
+      return toast.info(
+        <>
+          Você já tentou a letra&nbsp;<strong>{value}</strong>
+        </>
+      );
     }
 
     const hits = challenge.word
@@ -128,7 +132,7 @@ export default function App() {
             }
           </div>
 
-          <h4>Palpite</h4>
+          <h4>Palpite:</h4>
 
           <div className={styles.guess}>
             <Input
