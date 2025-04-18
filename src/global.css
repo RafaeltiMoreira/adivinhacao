@@ -11,7 +11,12 @@
 body {
   background-color: #f5f5fa;
   font-family: "Noto Sans", serif;
-  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input, button {
+  font-family: "Noto Sans", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
